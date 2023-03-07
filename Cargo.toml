@@ -1,0 +1,16 @@
+[package]
+name = "newt_stub"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rlibc = "1.0.0"
+
+uefi = { version = "0.14.0", features = ['logger', 'alloc', ] }
+uefi-services = "0.11.0"
+uefi-macros = "0.5.0"
+log = { version = "0.4.0", default-features = false }
+goblin = { version = "0.5.1", default-features = false, features = ['elf32', 'elf64', 'alloc', 'endian_fd'] }
+arrayvec = { version = "0.7.1", default-features = false }
